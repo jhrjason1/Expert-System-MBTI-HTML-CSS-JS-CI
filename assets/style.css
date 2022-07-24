@@ -1,0 +1,192 @@
+.home {
+    background-image: url('http://localhost/expertsystem/assets/HomeBG.jpg');
+	background-attachment: fixed;
+}
+:root {
+	--main-color: salmon;
+	--font: #303538;
+	--nav: #2fdd78;
+	--font-fade: #68dada;
+	--bg: #fff;
+}
+
+/* Top Nav */
+nav {
+	background: var(--bg);
+	display: flex;
+	padding: 1rem 7%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+nav .topNav {
+	justify-content: end;
+}
+nav .topNav a {
+	margin: 0 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+nav .topNav a:hover {
+	color: var(--font-fade);
+	border-bottom: .1rem solid var(--font-fade);
+	padding-bottom: .5rem;
+	transition-duration: 0.5s;
+}
+
+/* Home Page */
+.home .title h1 {
+	color: var(--font);
+	font-size: 7.2rem;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 8rem;
+	text-shadow: 4px 4px 0 var(--font-fade);
+}
+.home .btnTest {
+	margin-top: 1rem;
+	position: absolute;
+	text-transform: capitalize;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: .8rem 3rem;
+	font-size: 1.2rem;
+	color: var(--font);
+	font-weight: bold;
+	background: var(--font-fade);
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px;
+}
+.home .btnTest:hover {
+	background: var(--font);
+	color: var(--font-fade);
+	letter-spacing: .2rem;
+	transition-duration: 0.5s;
+}
+
+/* TestModel Page */
+.home .title h3, .container .title h3 {
+	color: var(--font);
+	font-size: 3.6rem;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 8rem;
+	text-shadow: 4px 4px 0 var(--font-fade);
+}
+.question {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	padding: 2rem 2rem;
+	background-color: white;
+	border-radius: 5px;
+}
+.btn{
+	padding: 0.5rem 3rem;
+}
+.bg-form {
+	width: 50%;
+	border: 3px solid white;
+	border-radius: 5px;
+}
+
+/* Result */
+.judul {
+	margin-top: 8rem;
+	font-family: 'Changa', sans-serif;
+	font-weight: bold;
+}
+.nama {
+	font-family: 'Staatliches', cursive;
+	font-size: 2.5rem;
+}
+.row {
+	margin-top: 3rem;
+	padding: 1rem 1rem;
+}
+.text {
+	text-align: justify;
+}
+
+/* Personality Types */
+.main {
+	width: 30%;
+	margin: 50px auto;
+}
+
+/* About Us */
+.team .title {
+	color: var(--font);
+	font-size: 3rem;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 8rem;
+	padding: 2rem;
+	text-shadow: 4px 4px 0 var(--font-fade);
+}
+.team .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	gap: 2rem;
+}
+.team .box-container .box {
+	border: var(--font);
+	text-align: center;
+	background: var(--font-fade);
+	box-shadow: 4px 4px 10px var(--font);
+	padding: 5rem 0rem;
+	border-radius: 10px;
+}
+.team .box-container .box .manusia {
+	height: 10rem;
+	width: 10rem;
+	margin-top: -50px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.team .box-container .box h3 {
+	padding: 1.2rem;
+	font-size: 1.5rem;
+	color: var(--font);
+}
+.team .box-container .box p {
+	font-size: 1rem;
+	color: var(--font);
+	margin-top: -10px;
+}
+.iconrow {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 2rem;
+	cursor: pointer;
+}
+.icon:hover{
+	transform: scale(1.5);
+	transition-duration: 0.5s;
+}
+
+/* Credits */
+.row .title {
+	color: var(--font);
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 2rem;
+	text-shadow: 2px 2px 0 var(--font-fade);
+}
+.row .title2 {
+	color: var(--font);
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 2rem;
+	text-shadow: 2px 2px 0 var(--font-fade);
+}
+.media {
+	height: 150px;
+	border: 1px solid var(--font);
+	border-radius: 5px;
+	align-items: center;
+	text-align: center;
+}
